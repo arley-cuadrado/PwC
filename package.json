@@ -1,0 +1,15 @@
+{
+  "name": "pwc-project",
+  "version": "1.0.0",
+  "description": "Only it's a test...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arley Cuadrado",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
+  }
+}

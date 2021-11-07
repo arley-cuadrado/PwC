@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wellcome to PWC Colombia!</title>
+      <link rel="icon" href="view-source:https://www.pwc.com/etc.clientlibs/pwc/clientlibs/css_common/resources/image/favicon.ico" type="image/x-icon"/>
+      <link rel="stylesheet" href="../../dist/owlcarousel2/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="../../dist/owlcarousel2/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="../../dist/static/css/pwc-style.css">
+      <script src="../../dist/owlcarousel2/js/jquery-3.6.0.min.js"></script>
+   </head>
+   <body class="pwc-body">
+      <nav class="pwc-center">
+         <div class="pwc-container">
+            <div class="logo" onclick="navbar(this.id)" id="home"><img src="../../dist/images/logo.svg.png" alt="pwc-logo"></div>
+            <div class="pwc-box hamburguer-show">
+               <div class="pwc-options-top">
+                  <aside>
+                     <div class="icon icon-user">
+                        <div class="a" id="signIn" onclick="formLog(this.id)"><img src="../../dist/images/nav/user.png" alt="icon-log">Sign in</div>
+                     </div>
+                     <div class="option">
+                        <div class="a" class="disabled" id="register" onclick="formLog(this.id)">Register</div>
+                     </div>
+                     <div class="icon">
+                        <div class="a" class="disabled"><img src="../../dist/images/nav/geo.png" alt="icon-geo">Colombia</div>
+                     </div>
+                  </aside>
+               </div>
+               <div class="pwc-options" id="dropdown">
+                  <div class="a">Servicios</div>
+                  <div class="a">Productos</div>
+                  <div class="a">Industrias</div>
+                  <div class="a disabled">Publicaciones</div>
+                  <div class="a" onclick="navbar(this.id)" id="us">Nosotros</div>
+                  <div class="a disabled">PwC Times</div>
+               </div>
+            </div>
+            <div class="hamburguer" onclcik='hamburguer()'>
+               <div></div>
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </nav>
+      <section id="inicio">
+         <header>
+            <div class="bg-orange">
+               <div class="pwc-container">
+                  <h2>¿Qué es La Nueva Ecuación?</h2>
+                  <button class="pwc-btn pwc-btn-secondary">Conoce más<img src="" alt=""></button>
+               </div>
+            </div>
+            <!-- Set up your HTML -->
+            <div class="owl-carousel">
+               <div> <img src="dist/images/banner-1.gif" alt="Nueva ecuación"></div>
+               <div> <img src="dist/images/banner-2.webp" alt="Acompañamiento tributario"></div>
+               <div> <img src="dist/images/banner-3.webp" alt="Outlook PwC Colombia"></div>
+            </div>
+         </header>
+         <main class="pwc-center">
+            <section class="pwc-container cards">
+               <div class="card">
+                  <img src="dist/images/cards/1.png" alt="Estatuto tributario">
+                  <p>Estatuto Tributario PwC 2021 ¡Cómpralo aquí! </p>
+               </div>
+               <div class="card">
+                  <img src="dist/images/cards/2.png" alt="Estatuto contable">
+                  <p>Estatuto Contable PwC ¡Adquiérelo ya! Indispensable para comprender información financiera de tu negocio y tratamientos contables de las PyME.</p>
+               </div>
+               <div class="card">
+                  <img src="dist/images/cards/3.png" alt="Presentación de resultados">
+                  <p>Presentación de resultados ODS 2018. Principales resultados sobre cómo más de 700 empresas en 21 países reportan su gestión frente a los objetivos globales.</p>
+               </div>
+            </section>
+         </main>
+         <aside>
+            <section class="bg-color pwc-social">
+               <article class="pwc-center pwc-container">
+                  <div class="pwc-box">
+                     <div class="left-box">
+                        <h2>Thought Leaderships PwC Colombia</h2>
+                        <strong class="subtitle">PwC Times</strong>
+                        <p>
+                           <strong>Información valiosa para personas y empresas valiosas.</strong> Queremos que conozcas de primera mano los desafíos y retos que enfrenta hoy el mundo. Consulta lo último en tendencia para el crecimiento de las empresas, los sectores y la sociedad.
+                        </p>
+                        <button class="pwc-btn">Conoce el Pwc Times</button>
+                     </div>
+                  </div>
+                  <div class="twitter pwc-box">
+                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                     <a href="https://twitter.com/PwC_Colombia" class="twitter-timeline " height="350" data-link-color="#e0301e" data-chrome="null noheader">
+                        <div class="tw loading-box">
+                           <!--<img src="/etc.clientlibs/pwc/clientlibs/components-colors/resources/images/twittersearch/loading-tw.gif" alt="Twitter"/>-->
+                           <p>TwitterSearch_Loading</p>
+                        </div>
+                        <div class="tw not-visible disable-box">
+                           <!--<img src="/etc.clientlibs/pwc/clientlibs/components-colors/resources/images/twittersearch/disable-tw.png" alt="Twitter"/>-->
+                           <p>TwitterSearch_Unavailable</p>
+                        </div>
+                     </a>
+                     <div id="1636073357175scriptdiv">
+                        <script type="text/cookie-consent" id="1636073357175script">   
+                           $(document).ready(function(){
+                               PwC.components.twittersearch.initializeTwitterSearch(); 
+                           });
+                           $(window).load(function(){
+                               PwC.components.twittersearch.updateTwitterSearch();
+                           });            
+                        </script> 
+                     </div>
+                     <!--<script>
+                        $(document).ready(function(){
+                            var groups = 4;
+                         PwcCookieConsent.insertScriptFromScriptElement("1636073357175script", "1636073357175scriptdiv",
+                                 groups, null, true, null, null, null, true);
+                        })
+                        </script>-->
+                  </div>
+               </article>
+            </section>
+         </aside>
+      </section>
+      <!-- -------------------------------------------------------------------------- -->
+      <section id="nosotros" class="nosotros">
+         <div class="pwc-center">
+            <div class="pwc-container">
+               <div class="breadcrumbs">
+                  <div class="disabled">PwC Colombia</div>
+                  <div class="option-active">Acerca de nosotros</div>
+               </div>
+            </div>
+         </div>
+         <section>
+            <div class="pwc-banner"> <img src="../../dist/images/banners/nosotros.jpg" alt="Nosotros"></div>
+            <article>
+               <div class="bg-gray">
+                  <div class="pwc-center">
+                     <div class="pwc-container">
+                        <h1>Nosotros somos PriceWaterhouseCoopers PwC Colombia</h1>
+                     </div>
+                  </div>
+               </div>
+               <!--<div class="bg-white"></div>-->
+            </article>
+         </section>
+         <main class="pwc-center">
+            <article class="pwc-container pwc-box-x2">
+               <div class="pwc-box">
+                  <div class="left-box">
+                     <h2>Somos PricewaterhouseCoopers</h2>
+                     <p>Llegó a Colombia en 1947 y en julio del año 2000 cambió su nombre a lo que conocemos hoy en día como <strong>PricewaterhouseCoopers (PwC)</strong> gracias a la fusión de los representantes de <strong>Coopers & Lybrand</strong>. </p>
+                     <p>En Colombia estamos comprometidos con el desarrollo empresarial y financiero de <strong>nuestros clientes</strong>, los cuales se han convertido en nuestro mejor aliado. Por eso, queremos ofrecer una <strong>amplia gama de servicios profesionales</strong> que puedan necesitar.</p>
+                     <p>Contamos con un <strong>excelente posicionamiento en los sectores</strong> y mercados más importantes del país. Queremos seguir creciendo y generar el mayor valor a nuestros clientes.</p>
+                  </div>
+               </div>
+               <div class="pwc-box">
+                  <img src="../../dist/images/banners/nosotros-2.webp" alt="Somos PricewaterhouseCoopers">
+               </div>
+            </article>
+         </main>
+         <article class="bg-color pwc-center">
+            <div class="pwc-container">
+               <h2>¿Por qué PwC?</h2>
+               <p>Creemos que la calidad de nuestros servicios debería ser evaluada por nuestros clientes actuales y potenciales, de acuerdo con los siguientes parámetros:</p>
+               <ul>
+                  <li>Credibilidad pública y confianza</li>
+                  <li>Rapidez y eficacia</li>
+                  <li>Relación costo – beneficio</li>
+                  <li>Expertise</li>
+               </ul>
+            </div>
+         </article>
+         <article class="bg-red pwc-center">
+            <div class="pwc-container">
+               <img src="https://www.pwc.com/content/dam/pwc/network/icons/webtile/icon_arrow-right.png" alt="Nuestras oficinas">
+               <div>
+                  <p>PwC Colombia</p>
+                  <strong>Nuestras oficinas</strong>
+               </div>
+            </div>
+         </article>
+         <div class="pwc-center">
+            <div class="pwc-line"></div>
+         </div>
+         <article class="pwc-center comunidad">
+            <div class="pwc-container">
+               <div class="pwc-box">
+                  <div class="left-box">
+                     <p class="pwc-reduce">
+                        Somos una comunidad que da soluciones, combinando la inteligencia humana, la experiencia y la innovación tecnológica para entregar resultados sostenibles y construir confianza.
+                     </p>
+                     <p>
+                        Todo tiene sentido con La Nueva Ecuación.
+                     </p>
+                     <a href="">Mira cómo La Nueva Ecuación puede darte soluciones</a>
+                  </div>
+               </div>
+               <div class="pwc-box">
+                  <img src="../../dist/images/banners/nosotros-3.png" alt="Comunidad que da soluciones">
+               </div>
+            </div>
+         </article>
+      </section>
+      <section class="hide" id="logReg">
+         <div class="pwc-center">
+            <div class="pwc-container">
+               <div class="breadcrumbs">
+                  <div class="disabled">PwC Colombia</div>
+                  <div class="option-active">Login</div>
+               </div>
+            </div>
+         </div>
+         <article class="pwc-section bg-container">
+            <div class="log">
+               <div class="options">
+                  <div class="a" id="log" onclick="formLog(this.id)">Login</div>
+                  <div class="a" id="reg" onclick="formLog(this.id)">Register</div>
+               </div>
+               <form class="main" id="main-log" name="f1" action="#" onsubmit="return validate()">
+                  <div class="title"><strong>Login</strong></div>
+                  <div class="input">
+                     <div class="pwc-margin"><label for="">Your Email Address</label></div>
+                     <div class="pwc-margin"><input type="text" placeholder="Email adress" name="emaillogin" id="emaillogin" onblur="login()"></div>
+                  </div>
+                  <div class="input">
+                     <!-- input-password -->
+                     <div class="pwc-margin"><label for="">Password</label></div>
+                     <div class="pwc-margin"><input type="password" placeholder="Password" name="passwordlogin" id="passwordlogin" onblur="login()"></div>
+                  </div>
+                  <div> 
+                     <button type="submit" class="pwc-btn-disabled" disabled id="btnLogin">Continue</button> 
+                  </div>
+                  <div class="pwc-margin please"><a href="#">PwC colleagues, please click here to login.</a></div>
+               </form>
+               <form class="main main-reg" id="main-reg">
+                  <div class="title"><strong>Registro</strong></div>
+                  <div class="input">
+                     <!--<div>-->
+                     <div id="signup" class="form">
+                        <div>
+                           <div class="pwc-margin"><label for="">User Email (Mandatory)</label></div>
+                           <div class="pwc-margin"><input type="text" class="input" name="email" id="email" autocomplete="off" onblur="registerLog(this.id);"></div>
+                        </div>
+                        <div>
+                           <div class="pwc-margin"><label for="">First Name (Mandatory)</label></div>
+                           <div class="pwc-margin"><input type="text" class="input" name="names" id="names" autocomplete="off" onblur="registerLog(this.id);"></div>
+                        </div>
+                        <div>
+                           <div class="pwc-margin"><label for="">Last Name (Mandatory)</label></div>
+                           <div class="pwc-margin"><input type="text" class="input" name="lastname" id="lastname" autocomplete="off" onblur="registerLog(this.id);"></div>
+                           <label for="">
+                              <p class="font-12">
+                                 Your password must contain a minimum of 8 characters; it cannot include your First name or Last name. It must also contain at least 3 of the following: an uppercase letter, a lowercase letter, a number or a special character. 
+                              </p>
+                           </label>
+                        </div>
+                        <hr>
+                        <div>
+                           <div class="pwc-margin"><label for="">Countries or regions (Mandatory)</label></div>
+                           <p class="font-12">
+                              Please ensure all required fields are filled in 
+                           </p>
+                           <div class="pwc-margin">
+                              <select name="cities" id="pet-select">
+                                 <option disabled='disabled'>Select country or region</option>
+                                 <option value="col">Colombia</option>
+                                 <option value="ven">Venezuela</option>
+                                 <option value="arg">Argentina</option>
+                                 <option value="eu">Estados Unidos</option>
+                                 <option value="cub">Cuba</option>
+                                 <option value="mex">México</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="pwc-margin"><label for="">Organization (Mandatory)</label></div>
+                           <div class="pwc-margin"><input type="text" class="input" name="organization" id="organization" autocomplete="off" onblur="registerLog(this.id);"></div>
+                        </div>
+                        <div>
+                           <div class="pwc-margin"><label for="">Job Title (Mandatory)</label></div>
+                           <div class="pwc-margin"><input type="text" class="input" name="jobtitle" id="jobtitle" autocomplete="off" onblur="registerLog(this.id)"></div>
+                        </div>
+                        <!-- ------------------------------------------------------------------------- -->
+                        <hr>
+                        <div class="pwc-consent">
+                           <div class="title"><strong>Marketing Consent </strong></div>
+                           <div class="pwc-checkbox">
+                              <div><input type="checkbox" id="cbox1" value="second_checkbox" class="checkbox"></div>
+                              <label for="cbox1" class="font-12">Yes, members of the PwC network can send me details about their products, insights, and events.</label>
+                           </div>
+                           <div class="pwc-checkbox">
+                              <div><input type="checkbox" id="cbox2" value="second_checkbox" class="checkbox"></div>
+                              <label for="cbox2" class="font-12">No, please do not include me in marketing mailings and remove me from promotional emails and communications from members of the PwC Network.</label>
+                           </div>
+                           <hr>
+                           <div class="pwc-checkbox pwc-bottom">
+                              <div><input type="checkbox" id="cbox3" value="second_checkbox" class="checkbox"></div>
+                              <label for="cbox3" class="font-12">By providing your details and checking the box, you acknowledge you have read the Privacy Statement and Terms and Conditions (including the sections in each related to Registered Users). </label>
+                           </div>
+                        </div>
+                        <div class="pwc-bottom">
+                           <button class="pwc-btn-secondary">cancel</button> 
+                           <button type="submit" class="pwc-btn-disabled" value="Sign Up" id="btnSubmit" disabled>Register</button> 
+                        </div>
+                     </div>
+                     <!--</div>-->
+                  </div>
+               </form>
+            </div>
+            </div>
+         </article>
+      </section>
+      <!-- MODAL -->
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <span class="close">&times;</span><!--&times;-->
+            <main>
+               <div class="emoji">
+                  <img src="./dist/images/sad.gif" alt="Datos incorrectos">
+               </div>
+               <div>
+                  <strong>Lo sentimos...</strong>
+               </div>
+               <p>Datos de usuario incorrectos, por favor vuelve a intentarlo!</p>
+            </main>
+         </div>
+      </div>
+      <!-- ****************************************************************** -->
+      <div class="pwc-top">
+         <div class="pwc-box">
+            <strong>Síguenos PwC Colombia</strong>
+            <div class="pwc-social-media">
+               <a href="" alt="facebook"><img src="https://www.pwc.com/content/pwc/script/network/follow/follow_facebook.png" alt=""></a>
+               <a href="" alt="twitter"><img src="https://www.pwc.com/content/pwc/script/network/follow/follow_twitter.png" alt=""></a>
+               <a href="" alt="linkedin"><img src="https://www.pwc.com/content/pwc/script/network/follow/follow_linkedin.png" alt=""></a>
+               <a href="" alt="youtube"><img src="https://www.pwc.com/content/pwc/script/network/follow/follow_youtube.png" alt=""></a>
+               <a href="" alt="instagram"><img src="https://www.pwc.com/content/pwc/script/network/follow/follow_instagram.png" alt=""></a>
+            </div>
+         </div>
+      </div>
+      <footer class="pwc-center">
+         <div class="pwc-container">
+            <div class="pwc-bottom">
+               <div><a href="">PwC Colombia</a></div>
+               <div class="margin-bottom">
+                  <a href="">Acerca de Nosotros</a>
+                  <a href="">Nuestros servicios</a>
+               </div>
+               <div class="pwc-copy">
+                  <img src="https://www.pwc.com/etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/PwC-logo-white.svg" alt="">
+                  <p>© 2020 - 2021 PwC. PricewaterhouseCoopers. PwC se refiere a las Firmas colombianas que hacen parte de la red global de PricewaterhouseCoopers International Limited, cada una de las cuales es una entidad legal separada e independiente. Todos los derechos reservados.</p>
+               </div>
+               <div class="pwc-links">
+                  <a href="">Política de privacidad</a>
+                  <a href="">Términos legales</a>
+                  <a href="">Acerca del proveedor de este sitio</a>
+               </div>
+               <div>
+                  <a href="">Política de tratamiento de datos personales</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="dist/owlcarousel2/js/owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+             $(".owl-carousel").owlCarousel();
+         });
+         
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             responsiveClass:true,
+             autoplay:true,
+             autoplayTimeout:5000,
+             autoplayHoverPause:false,
+             responsive:{
+                 0:{
+                     items:1,
+                     nav:true
+                 },
+                 600:{
+                     items:1,
+                     nav:false
+                 },
+                 1000:{
+                     items:1,
+                     nav:true,
+                     loop:true
+                 }
+             }
+         })
+      </script> 
+      <script src="dist/js/app.js"></script>
+   </body>
+</html>
