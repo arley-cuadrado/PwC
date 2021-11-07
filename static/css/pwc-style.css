@@ -652,6 +652,7 @@ select {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+    text-align: center;
 }
 
 .modal-content main strong {
@@ -888,5 +889,11 @@ hr {
 	.pwc-reduce {
 		margin-top: 0px;
 	}
+}
+
+@media screen and ( max-width: 530px) {
+    .modal-content {
+        width: auto;
+    }
 }
 
